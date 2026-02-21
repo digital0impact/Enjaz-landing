@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-white text-ink antialiased;
+  }
+  /* تحسين التباين: عناوين بخط عريض، نصوص بخط متوسط */
+  h1, h2, h3 {
+    @apply font-bold text-ink;
+  }
+}
+
+/* Smooth scroll للصفحة بالكامل */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

@@ -1,0 +1,5 @@
+node_modules
+.next
+Enjaz-landing
+.env*.local
+.DS_Store
