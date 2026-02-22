@@ -19,6 +19,12 @@ export default function Footer({ ctaUrl = '#' }) {
           <div>
             <p className="text-xl font-bold text-white">انجاز المعلم</p>
             <p className="mt-2 text-sm text-neutral-400">منصتك المتكاملة لإدارة وعرض انجازاتك المهنية</p>
+            <p className="mt-2 text-sm text-neutral-400">
+              للتواصل والدعم:{' '}
+              <a href="mailto:digital0impact@gmail.com" className="text-primary-300 transition-colors hover:text-white">
+                digital0impact@gmail.com
+              </a>
+            </p>
           </div>
           <nav className="flex flex-wrap gap-6">
             {links.map((link) => (
@@ -44,6 +50,9 @@ export default function Footer({ ctaUrl = '#' }) {
               </a>
               <a href="/terms" className="text-neutral-400 transition-colors hover:text-white">
                 الشروط والأحكام
+              </a>
+              <a href="mailto:digital0impact@gmail.com" className="text-neutral-400 transition-colors hover:text-white">
+                للتواصل والدعم: digital0impact@gmail.com
               </a>
             </div>
           </div>
