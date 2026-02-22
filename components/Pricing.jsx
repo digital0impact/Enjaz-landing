@@ -4,6 +4,9 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import CardWoStyle from './CardWoStyle'
 
+const APP_URL = 'https://enjaz-almaulm.vercel.app/'
+const STORE_URL = 'https://salla.sa/moaen.lkm'
+
 const plans = [
   {
     name: 'الاشتراك الأساسي',
@@ -15,7 +18,8 @@ const plans = [
       'تقارير أساسية',
       'نسخ احتياطي محدود (5 ملفات)',
     ],
-    cta: 'متجر مُعين',
+    cta: 'احصل على التطبيق',
+    ctaUrl: APP_URL,
     highlighted: false,
   },
   {
@@ -31,6 +35,7 @@ const plans = [
       'إحصائيات تفصيلية',
     ],
     cta: 'متجر مُعين',
+    ctaUrl: STORE_URL,
     highlighted: true,
   },
   {
@@ -46,6 +51,7 @@ const plans = [
       'إحصائيات تفصيلية',
     ],
     cta: 'متجر مُعين',
+    ctaUrl: STORE_URL,
     highlighted: false,
     ribbon: 'توفير اكبر',
   },
@@ -77,7 +83,7 @@ const titleVariants = {
   },
 }
 
-export default function Pricing({ ctaUrl = '#' }) {
+export default function Pricing() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.12 })
 
@@ -155,7 +161,7 @@ export default function Pricing({ ctaUrl = '#' }) {
                     ))}
                   </ul>
                   <motion.a
-                    href={ctaUrl}
+                    href={plan.ctaUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-8 flex min-h-[52px] w-full items-center justify-center rounded-lg bg-primary-500 py-3.5 text-center font-bold text-white hover:bg-primary-600"
