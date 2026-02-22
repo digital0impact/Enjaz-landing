@@ -91,18 +91,6 @@ export default function Hero({ ctaUrl = '#' }) {
           </motion.div>
         </motion.div>
       </div>
-      {/* عنصر زخرفي بحركة floating في أسفل القسم */}
-      <motion.div
-        animate={{ y: [0, -6, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 pointer-events-none lg:block z-10"
-        aria-hidden
-      >
-        <div
-          className="h-20 w-20 rounded-2xl opacity-30 bg-white/20 backdrop-blur-sm"
-          style={{ background: 'linear-gradient(135deg, rgba(179, 211, 211, 0.4) 0%, rgba(63, 103, 102, 0.35) 100%)' }}
-        />
-      </motion.div>
     </section>
   )
 }

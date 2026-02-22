@@ -9,7 +9,7 @@ import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 
 // رابط متجر مُعين على سلة
-const STORE_URL = 'https://salla.sa/moaen.lkm'
+const STORE_URL = 'https://enjaz-almaulm.vercel.app/'
 
 export default function Home() {
   return (

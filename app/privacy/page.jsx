@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const STORE_URL = 'https://salla.sa/moaen.lkm'
+const STORE_URL = 'https://enjaz-almaulm.vercel.app/'
 
 export const metadata = {
   title: 'سياسة الخصوصية | انجاز المعلم',
