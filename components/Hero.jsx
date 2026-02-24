@@ -93,7 +93,7 @@ export default function Hero({ ctaUrl = '#' }) {
             variants={fadeSlideUp}
             className="mt-4 text-lg font-semibold text-ink/90 sm:text-xl md:text-2xl"
           >
-            تطوير: أ. أمل بنت علي الشامان
+            تطوير وتصميم: أ. أمل بنت علي الشامان
           </motion.p>
         </motion.div>
       </div>
