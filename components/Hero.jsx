@@ -53,9 +53,9 @@ export default function Hero({ ctaUrl = '#' }) {
               <Image
                 src="/logo.png"
                 alt="انجاز المعلم"
-                width={400}
-                height={220}
-                className="h-40 w-auto object-contain sm:h-48 md:h-60 lg:h-72"
+                width={500}
+                height={275}
+                className="h-48 w-auto object-contain sm:h-56 md:h-72 lg:h-96"
                 priority
                 unoptimized
               />
@@ -89,6 +89,12 @@ export default function Hero({ ctaUrl = '#' }) {
               </svg>
             </motion.a>
           </motion.div>
+          <motion.p
+            variants={fadeSlideUp}
+            className="mt-4 text-lg font-semibold text-ink/90 sm:text-xl md:text-2xl"
+          >
+            تطوير: أ. أمل بنت علي الشامان
+          </motion.p>
         </motion.div>
       </div>
     </section>
