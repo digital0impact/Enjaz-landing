@@ -21,8 +21,8 @@ export default function Footer({ ctaUrl = '#' }) {
             <p className="mt-2 text-sm text-neutral-400">منصتك المتكاملة لإدارة وعرض انجازاتك المهنية</p>
             <p className="mt-2 text-sm text-neutral-400">
               للتواصل والدعم:{' '}
-              <a href="mailto:digital0impact@gmail.com" className="text-primary-300 transition-colors hover:text-white">
-                digital0impact@gmail.com
+              <a href="mailto:info@enjaz-almaulm.com" className="text-primary-300 transition-colors hover:text-white">
+                info@enjaz-almaulm.com
               </a>
             </p>
           </div>
@@ -51,8 +51,8 @@ export default function Footer({ ctaUrl = '#' }) {
               <a href="/terms" className="text-neutral-400 transition-colors hover:text-white">
                 الشروط والأحكام
               </a>
-              <a href="mailto:digital0impact@gmail.com" className="text-neutral-400 transition-colors hover:text-white">
-                للتواصل والدعم: digital0impact@gmail.com
+              <a href="mailto:info@enjaz-almaulm.com" className="text-neutral-400 transition-colors hover:text-white">
+                للتواصل والدعم: info@enjaz-almaulm.com
               </a>
             </div>
           </div>
