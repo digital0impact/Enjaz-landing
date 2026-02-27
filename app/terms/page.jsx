@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const STORE_URL = 'https://enjaz-almaulm.com/'
+const STORE_URL = 'https://www.enjaz-almaulm.com/'
 
 export const metadata = {
   title: 'الشروط والأحكام | انجاز المعلم',

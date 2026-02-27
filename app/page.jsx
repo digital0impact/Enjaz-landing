@@ -9,7 +9,7 @@ import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 
 // رابط متجر مُعين على سلة
-const STORE_URL = 'https://enjaz-almaulm.com/'
+const STORE_URL = 'https://www.enjaz-almaulm.com/'
 
 export default function Home() {
   return (
