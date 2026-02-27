@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import CardWoStyle from './CardWoStyle'
 
-const APP_URL = 'https://enjaz-almaulm.vercel.app/'
+const APP_URL = 'https://enjaz-almaulm.com/'
 const STORE_URL = 'https://salla.sa/moaen.lkm'
 
 const plans = [
