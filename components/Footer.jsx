@@ -25,6 +25,17 @@ export default function Footer({ ctaUrl = '#' }) {
                 info@enjaz-almaulm.com
               </a>
             </p>
+            <p className="mt-1 text-sm text-neutral-400">
+              تليغرام:{' '}
+              <a
+                href="https://t.me/Enjaz_Almualm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-300 transition-colors hover:text-white"
+              >
+                @Enjaz_Almualm
+              </a>
+            </p>
           </div>
           <nav className="flex flex-wrap gap-6">
             {links.map((link) => (
@@ -53,6 +64,9 @@ export default function Footer({ ctaUrl = '#' }) {
               </a>
               <a href="mailto:info@enjaz-almaulm.com" className="text-neutral-400 transition-colors hover:text-white">
                 للتواصل والدعم: info@enjaz-almaulm.com
+              </a>
+              <a href="https://t.me/Enjaz_Almualm" target="_blank" rel="noopener noreferrer" className="text-neutral-400 transition-colors hover:text-white">
+                تليغرام
               </a>
             </div>
           </div>
