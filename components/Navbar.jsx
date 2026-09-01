@@ -15,7 +15,7 @@ const navLinks = [
   { label: 'الأسئلة الشائعة', href: '#faq' },
 ]
 
-export default function Navbar() {
+export default function Navbar({ ctaUrl = '#' }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -42,7 +42,15 @@ export default function Navbar() {
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
+          <a
+            href={ctaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden rounded-lg bg-primary-500 px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-primary-600 sm:inline-block"
+          >
+            دخول للتطبيق
+          </a>
           <button
             type="button"
             onClick={() => setOpen(!open)}
@@ -72,6 +80,15 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="mt-2 rounded-lg bg-primary-500 px-4 py-3 text-center font-bold text-white sm:hidden"
+            >
+              دخول للتطبيق
+            </a>
           </div>
         </div>
       )}
