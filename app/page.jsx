@@ -8,21 +8,21 @@ import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 
-// رابط متجر مُعين على سلة
-const STORE_URL = 'https://www.enjaz-almaulm.com/'
+// رابط تطبيق انجاز المعلم الفعلي (نطاق فرعي منفصل عن صفحة الهبوط هذه)
+const APP_URL = 'https://app.enjaz-almaulm.com/'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar ctaUrl={STORE_URL} />
-      <Hero ctaUrl={STORE_URL} />
+      <Navbar ctaUrl={APP_URL} />
+      <Hero ctaUrl={APP_URL} />
       <Features />
       <HowItWorks />
       <Screenshots />
       <Testimonials />
-      <Pricing ctaUrl={STORE_URL} />
+      <Pricing ctaUrl={APP_URL} />
       <FAQ />
-      <Footer ctaUrl={STORE_URL} />
+      <Footer ctaUrl={APP_URL} />
     </main>
   )
 }
