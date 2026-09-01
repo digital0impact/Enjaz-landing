@@ -31,16 +31,15 @@ const plans = [
       'تقارير متقدمة وشاملة',
       'نسخ احتياطي غير محدود',
       'تحديثات مجانية ومستمرة',
-      'تصدير التقارير بصيغ متعددة',
-      'إحصائيات تفصيلية',
     ],
     cta: 'متجر مُعين',
     ctaUrl: STORE_URL,
-    highlighted: true,
+    highlighted: false,
   },
   {
     name: 'الاشتراك السنوي',
     price: '49.99 ريال',
+    priceNote: 'أقل من 4.20 ريال شهريًا',
     description: 'اشتراك شامل لمدة سنة كاملة',
     features: [
       'جميع الميزات الأساسية',
@@ -52,8 +51,8 @@ const plans = [
     ],
     cta: 'متجر مُعين',
     ctaUrl: STORE_URL,
-    highlighted: false,
-    ribbon: 'توفير اكبر',
+    highlighted: true,
+    ribbon: '⭐ الأكثر قيمة',
   },
 ]
 
@@ -149,6 +148,9 @@ export default function Pricing() {
                 <div className="relative z-10 flex w-full flex-col">
                   <h3 className="text-xl font-bold text-ink">{plan.name}</h3>
                   <p className="mt-2 text-3xl font-bold text-ink">{plan.price}</p>
+                  {plan.priceNote && (
+                    <p className="mt-1 text-sm font-bold text-primary-600">{plan.priceNote}</p>
+                  )}
                   <p className="mt-1.5 text-ink/85">{plan.description}</p>
                   <ul className="mt-4 flex-1 space-y-2">
                     {plan.features.map((f) => (
