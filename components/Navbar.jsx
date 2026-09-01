@@ -9,8 +9,6 @@ const logoSrc = '/logo.png'
 const navLinks = [
   { label: 'المميزات', href: '#features' },
   { label: 'كيف تعمل', href: '#how-it-works' },
-  { label: 'لقطات الشاشة', href: '#screenshots' },
-  { label: 'الشهادات', href: '#testimonials' },
   { label: 'الأسعار', href: '#pricing' },
   { label: 'الأسئلة الشائعة', href: '#faq' },
 ]
