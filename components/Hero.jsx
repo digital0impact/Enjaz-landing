@@ -15,7 +15,7 @@ const stagger = {
   },
 }
 
-export default function Hero({ ctaUrl = '#' }) {
+export default function Hero({ ctaUrl = '#', demoUrl = '#' }) {
   return (
     <section
       className="relative overflow-hidden pt-12 pb-24 md:pt-16 md:pb-32 lg:pt-20 lg:pb-32 flex items-start justify-center"
@@ -42,18 +42,13 @@ export default function Hero({ ctaUrl = '#' }) {
           </motion.p>
           <motion.div variants={fadeSlideUp} className="mt-6 flex flex-wrap justify-center gap-4">
             <motion.a
-              href={ctaUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={demoUrl}
               className="inline-flex items-center gap-2 rounded-lg bg-primary-500 px-8 py-4 text-lg font-bold text-white shadow-lg"
               whileHover={{ scale: 1.03, boxShadow: '0 10px 25px -5px rgba(63, 103, 102, 0.45)' }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >
-              <span>جرّب إنجاز المعلم</span>
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
+              <span>🎯 تجربة نموذجية</span>
             </motion.a>
             <motion.a
               href="#how-it-works"
@@ -66,6 +61,12 @@ export default function Hero({ ctaUrl = '#' }) {
             </motion.a>
           </motion.div>
           <motion.p variants={fadeSlideUp} className="mt-3 text-sm text-ink/70">
+            استكشف إنجاز المعلم ببيانات تجريبية، بلا تسجيل — أو{' '}
+            <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary-600 underline">
+              أنشئي حسابك مباشرة
+            </a>
+          </motion.p>
+          <motion.p variants={fadeSlideUp} className="mt-1 text-sm text-ink/70">
             مصمم خصيصًا للمعلمين في المملكة العربية السعودية.
           </motion.p>
           <motion.div variants={fadeSlideUp} className="mt-10 w-full">
