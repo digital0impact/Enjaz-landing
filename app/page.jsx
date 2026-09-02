@@ -14,14 +14,16 @@ import Footer from '@/components/Footer'
 
 // رابط تطبيق انجاز المعلم الفعلي (نطاق فرعي منفصل عن صفحة الهبوط هذه)
 const APP_URL = 'https://app.enjaz-almaulm.com/'
+// رابط الدخول المباشر للعرض التجريبي (حساب معلم جاهز ببيانات واقعية، بلا تسجيل)
+const DEMO_URL = 'https://app.enjaz-almaulm.com/demo'
 
 export default function Home() {
   return (
     <main id="top" className="min-h-screen">
       <Navbar ctaUrl={APP_URL} />
-      <Hero ctaUrl={APP_URL} />
+      <Hero ctaUrl={APP_URL} demoUrl={DEMO_URL} />
       <Problem />
-      <StudentAnalysisHero ctaUrl={APP_URL} />
+      <StudentAnalysisHero ctaUrl={DEMO_URL} />
       <FeatureDetail
         id="results-analysis"
         title="حوّل النتائج إلى معلومات قابلة للاستخدام"
@@ -30,7 +32,7 @@ export default function Home() {
         image={{ src: '/screen shot/2.gif', alt: 'تحليل النتائج' }}
         imagePosition="left"
         ctaText="شاهد التحليل داخل التطبيق"
-        ctaHref={APP_URL}
+        ctaHref={DEMO_URL}
       />
       <FeatureDetail
         id="student-patterns"
@@ -54,7 +56,7 @@ export default function Home() {
         image={{ src: '/screen shot/4.gif', alt: 'منشئ التقارير' }}
         imagePosition="left"
         ctaText="شاهد منشئ التقارير"
-        ctaHref={APP_URL}
+        ctaHref={DEMO_URL}
       />
       <FeatureDetail
         id="documentation"
