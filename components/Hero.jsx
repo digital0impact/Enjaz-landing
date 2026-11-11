@@ -40,25 +40,38 @@ export default function Hero({ ctaUrl = '#', demoUrl = '#' }) {
           >
             حلّل نتائج طلابك، اكتشف أنماط أدائهم، أنشئ تقاريرك، ووثّق إنجازاتك المهنية — في مكان واحد.
           </motion.p>
-          <motion.div variants={fadeSlideUp} className="mt-6 flex flex-wrap justify-center gap-4">
+          <motion.div variants={fadeSlideUp} className="mt-6 flex flex-col items-center gap-4">
             <motion.a
-              href={demoUrl}
-              className="inline-flex items-center gap-2 rounded-lg bg-primary-500 px-8 py-4 text-lg font-bold text-white shadow-lg"
-              whileHover={{ scale: 1.03, boxShadow: '0 10px 25px -5px rgba(63, 103, 102, 0.45)' }}
+              href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-ink px-8 py-4 text-lg font-bold text-white shadow-lg"
+              whileHover={{ scale: 1.03, boxShadow: '0 10px 25px -5px rgba(28, 31, 51, 0.45)' }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >
-              <span>🎯 تجربة نموذجية</span>
+              <span>🔑 الدخول للتطبيق</span>
             </motion.a>
-            <motion.a
-              href="#how-it-works"
-              className="inline-flex items-center gap-2 rounded-lg border border-ink/15 bg-white/60 px-8 py-4 text-lg font-bold text-ink shadow-sm backdrop-blur-sm"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.2 }}
-            >
-              شاهد كيف يعمل
-            </motion.a>
+            <div className="flex flex-wrap justify-center gap-4">
+              <motion.a
+                href={demoUrl}
+                className="inline-flex items-center gap-2 rounded-lg bg-primary-500 px-8 py-4 text-lg font-bold text-white shadow-lg"
+                whileHover={{ scale: 1.03, boxShadow: '0 10px 25px -5px rgba(63, 103, 102, 0.45)' }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+              >
+                <span>🎯 تجربة نموذجية</span>
+              </motion.a>
+              <motion.a
+                href="#how-it-works"
+                className="inline-flex items-center gap-2 rounded-lg border border-ink/15 bg-white/60 px-8 py-4 text-lg font-bold text-ink shadow-sm backdrop-blur-sm"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+              >
+                شاهد كيف يعمل
+              </motion.a>
+            </div>
           </motion.div>
           <motion.p variants={fadeSlideUp} className="mt-3 text-sm text-ink/70">
             استكشف إنجاز المعلم ببيانات تجريبية، بلا تسجيل — أو{' '}
